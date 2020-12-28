@@ -7,6 +7,14 @@ const GlobalStyle = createGlobalStyle`
   ${Fonts};
 
   :root {
+    --persian-plum: #650D1B;
+    --dark-sienna: #24050a;
+    --kombu-green: #334139;
+    --magnolia: #fffaff;
+    --pine-tree: #1e2d24;
+    --carrot-orange: #f18f01;
+    --oxford-blue: #05204a;
+
     --dark-navy: #020c1b;
     --navy: #0a192f;
     --light-navy: #172a45;
@@ -61,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: var(--slate);
+    background-color: var(--pine-tree);
     color: var(--lightest-slate);
   }
 
@@ -72,7 +80,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--navy);
+    background-color: var(--persian-plum);
     color: var(--slate);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);
@@ -163,7 +171,7 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     margin: 0 0 10px 0;
     font-weight: 600;
-    color: var(--lightest-slate);
+    color: var(--carrot-orange);
     line-height: 1.1;
   }
 
@@ -192,7 +200,7 @@ const GlobalStyle = createGlobalStyle`
       counter-increment: section;
       content: '0' counter(section) '.';
       margin-right: 10px;
-      color: var(--green);
+      color: var(--magnolia);
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
@@ -256,7 +264,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: var(--green);
+      color: var(--magnolia);
     }
 
     &.inline-link {
@@ -320,14 +328,14 @@ const GlobalStyle = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: var(--green);
+          color: var(--magnolia);
         }
       }
     }
   }
 
   blockquote {
-    border-left-color: var(--green);
+    border-left-color: var(--magnolia);
     border-left-style: solid;
     border-left-width: 1px;
     margin-left: 0px;
@@ -356,18 +364,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #logo {
-    color: var(--green);
+    color: var(--magnolia);
   }
 
   .overline {
-    color: var(--green);
+    color: var(--magnolia);
     font-family: var(--font-mono);
     font-size: var(--fz-md);
     font-weight: 400;
   }
 
   .subtitle {
-    color: var(--green);
+    color: var(--magnolia);
     margin: 0 0 20px 0;
     font-size: var(--fz-md);
     font-family: var(--font-mono);
@@ -390,7 +398,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    color: var(--green);
+    color: var(--magnolia);
 
     .arrow {
       display: block;

@@ -2,12 +2,12 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Brittany Chiang',
+    title: 'Alejandro Pardo',
     description:
       'Brittany Chiang is a software engineer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+    siteUrl: 'https://alejandropardo.dev', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@alejandropardo',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'AlejandroPardo',
+        short_name: 'AlejandroPardo',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
@@ -41,20 +41,6 @@ module.exports = {
       options: {
         name: 'content',
         path: `${__dirname}/content/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/content/posts`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `projects`,
-        path: `${__dirname}/content/projects`,
       },
     },
     {

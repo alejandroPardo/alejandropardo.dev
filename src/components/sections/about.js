@@ -38,7 +38,7 @@ const StyledText = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--green);
+        color: var(--magnolia);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -60,7 +60,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: var(--magnolia);
 
     &:hover,
     &:focus {
@@ -105,7 +105,7 @@ const StyledPic = styled.div`
     }
 
     &:after {
-      border: 2px solid var(--green);
+      border: 2px solid var(--magnolia);
       top: 20px;
       left: 20px;
       z-index: -1;
@@ -132,7 +132,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'Vue', 'Node.js', 'WordPress'];
+  const skills = ['Java (8+)', 'Spring-Boot', 'Oracle', 'PostgreSQL', 'MongoDB', 'Docker'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -141,19 +141,19 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Brittany, a software engineer based in Boston, MA.</p>
+            <p>Hi! I'm Alejandro, a software engineer based in Barcelona, Spain.</p>
 
             <p>
-              I enjoy creating things that live on the internet, whether that be websites,
-              applications, or anything in between. My goal is to always build products that provide
-              pixel-perfect, performant experiences.
+              I love creating meaningful things that live on the internet, whether that be websites,
+              applications, or anything in between.
             </p>
 
             <p>
-              Shortly after graduating from{' '}
-              <a href="https://www.ccis.northeastern.edu">Northeastern University</a>, I joined the
-              engineering team at <a href="https://www.upstatement.com">Upstatement</a> where I work
-              on a wide variety of interesting and meaningful projects on a daily basis.
+              I graduated from the <a href="http://www.ucv.ve/">Universidad Central de Venezuela</a>{' '}
+              before I moved to Spain and since then I joined the team at{' '}
+              <a href="https://www.coru.net">Coru.net</a> where I work on a wide variety of
+              interesting and meaningful projects on a daily basis, mostly on backend and data
+              recovery APIs.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>

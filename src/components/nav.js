@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: var(--navy);
+  background-color: var(--dark-sienna);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -30,7 +30,7 @@ const StyledHeader = styled.header`
     css`
       height: var(--nav-scroll-height);
       transform: translateY(0px);
-      background-color: rgba(10, 25, 47, 0.85);
+      background-color: var(--dark-sienna);
       box-shadow: 0 10px 30px -10px var(--navy-shadow);
     `};
 
@@ -64,7 +64,7 @@ const StyledNav = styled.nav`
     ${({ theme }) => theme.mixins.flexCenter};
 
     a {
-      color: var(--green);
+      color: var(--magnolia);
       width: 42px;
       height: 42px;
 
@@ -110,7 +110,7 @@ const StyledLinks = styled.div`
         &:before {
           content: '0' counter(item) '.';
           margin-right: 5px;
-          color: var(--green);
+          color: var(--magnolia);
           font-size: var(--fz-xxs);
           text-align: right;
         }
